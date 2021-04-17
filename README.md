@@ -4,6 +4,11 @@
 
 ![cover](https://miro.medium.com/max/5000/1*HyemvyVt7JI25k-_cTKMcg.png)
 
+
+[![Build](https://github.com/leozz37/gin-app-template/actions/workflows/build.yml/badge.svg)](https://github.com/leozz37/gin-app-template/actions/workflows/build.yml)
+[![Unit Tests](https://github.com/leozz37/gin-app-template/actions/workflows/unit_tests.yml/badge.svg)](https://github.com/leozz37/gin-app-template/actions/workflows/unit_tests.yml)
+[![Docker](https://github.com/leozz37/gin-app-template/actions/workflows/docker.yml/badge.svg)](https://github.com/leozz37/gin-app-template/actions/workflows/docker.yml)
+
 ## Contents
 
 - [Architecture](#architecture)
@@ -168,3 +173,14 @@ To run the tests with coverage, do the following:
 ```shell
 $ go test -v -covermode=count ./...
 ```
+
+## Continuous Integration
+
+We use GitHub Actions for our CI tool. Right now we have four workflows, and you can check they state [here](https://github.com/leozz37/gin-app-template/actions):
+
+[![Build](https://github.com/leozz37/gin-app-template/actions/workflows/build.yml/badge.svg)](https://github.com/leozz37/gin-app-template/actions/workflows/build.yml) - Building the binary status.
+
+[![Unit Tests](https://github.com/leozz37/gin-app-template/actions/workflows/unit_tests.yml/badge.svg)](https://github.com/leozz37/gin-app-template/actions/workflows/unit_tests.yml) - Unit tests status.
+
+[![Docker](https://github.com/leozz37/gin-app-template/actions/workflows/docker.yml/badge.svg)](https://github.com/leozz37/gin-app-template/actions/workflows/docker.yml) - Building the Docker image status.
+

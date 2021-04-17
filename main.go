@@ -1,15 +1,24 @@
 package main
 
-import "github.com/gin-gonic/gin"
+import (
+	"log"
+	"os"
+
+	"github.com/joho/godotenv"
+	"github.com/leozz37/gin-app-template/routes"
+	"github.com/leozz37/gin-app-template/services/db"
+)
 
 func main() {
-	router := gin.Default()
+	// Load environment variables from .env file
+	err := godotenv.Load(".env.example")
+	if err != nil {
+		log.Fatal("Error loading .env file")
+	}
 
-	router.GET("/ping", func(c *gin.Context) {
-		c.JSON(200, gin.H{
-			"message": "pong",
-		})
-	})
+	// Start DB
+	db.ConnectMySQL(os.Getenv("DATABASE_TYPE"), os.Getenv("DATABASE_DSN"))
 
-	router.Run()
+	// Start Gin
+	routes.InitRoutes()
 }

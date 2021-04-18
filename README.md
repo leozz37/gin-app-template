@@ -8,6 +8,7 @@
 [![Build](https://github.com/leozz37/gin-app-template/actions/workflows/build.yml/badge.svg)](https://github.com/leozz37/gin-app-template/actions/workflows/build.yml)
 [![Unit Tests](https://github.com/leozz37/gin-app-template/actions/workflows/unit_tests.yml/badge.svg)](https://github.com/leozz37/gin-app-template/actions/workflows/unit_tests.yml)
 [![Docker](https://github.com/leozz37/gin-app-template/actions/workflows/docker.yml/badge.svg)](https://github.com/leozz37/gin-app-template/actions/workflows/docker.yml)
+[![Terraform](https://github.com/leozz37/gin-app-template/actions/workflows/terraform.yml/badge.svg)](https://github.com/leozz37/gin-app-template/actions/workflows/terraform.yml)
 
 ## Contents
 
@@ -184,3 +185,4 @@ We use GitHub Actions for our CI tool. Right now we have four workflows, and you
 
 [![Docker](https://github.com/leozz37/gin-app-template/actions/workflows/docker.yml/badge.svg)](https://github.com/leozz37/gin-app-template/actions/workflows/docker.yml) - Building the Docker image status.
 
+[![Terraform](https://github.com/leozz37/gin-app-template/actions/workflows/terraform.yml/badge.svg)](https://github.com/leozz37/gin-app-template/actions/workflows/terraform.yml) - Terraform plan
